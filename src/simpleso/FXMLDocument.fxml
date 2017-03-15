@@ -8,7 +8,7 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<!--mirá vos che-->
 <AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="684.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLDocumentController">
     <children>
       <AnchorPane fx:id="p_usuario" prefHeight="397.0" prefWidth="684.0" visible="false">
@@ -25,7 +25,7 @@
                <effect>
                   <ImageInput>
                      <source>
-                        <Image url="file:/C:/Users/pacw1_000/Documents/NetBeansProjects/SimpleOS/src/imagenes/usuario%20(1).png" />
+                         <Image url="@../imagenes/usuario%20(1).png" />
                      </source>
                   </ImageInput>
                </effect>
@@ -36,7 +36,7 @@
          <effect>
             <ImageInput>
                <source>
-                  <Image url="file:/C:/Users/pacw1_000/Documents/NetBeansProjects/SimpleOS/src/imagenes/logo2_opt.jpg" />
+                  <Image url="@../imagenes/logo2_opt.jpg" />
                </source>
             </ImageInput>
          </effect>
@@ -48,7 +48,7 @@
                <effect>
                   <ImageInput>
                      <source>
-                        <Image url="file:/C:/Users/pacw1_000/Documents/NetBeansProjects/SimpleOS/src/imagenes/candado.png" />
+                        <Image url="@../imagenes/candado.png" />
                      </source>
                   </ImageInput>
                </effect>
@@ -62,7 +62,7 @@
          <effect>
             <ImageInput>
                <source>
-                  <Image url="file:/C:/Users/pacw1_000/Documents/NetBeansProjects/SimpleOS/src/imagenes/siguiente-pagina%20(1).png" />
+                  <Image url="@../imagenes/siguiente-pagina%20(1).png" />
                </source>
             </ImageInput>
          </effect>
@@ -74,7 +74,7 @@
          <effect>
             <ImageInput>
                <source>
-                  <Image url="file:/C:/Users/pacw1_000/Documents/NetBeansProjects/SimpleOS/src/imagenes/cerrar.png" />
+                  <Image url="@../imagenes/cerrar.png" />
                </source>
             </ImageInput>
          </effect>
