@@ -29,7 +29,7 @@ import javafx.scene.layout.AnchorPane;
  */
 public class FXMLDocumentController implements Initializable {
     
-    
+    /*putoooooo*/
 
     @FXML private AnchorPane p_usuario;
     @FXML private AnchorPane p_contrasena;
