@@ -14,7 +14,7 @@
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLPaintController">
    <children>
       <Canvas fx:id="papel" height="356.0" layoutX="84.0" layoutY="44.0" onMouseDragged="#dibujar" onMouseMoved="#actualizar" width="516.0" />
-      <AnchorPane layoutY="45.0" prefHeight="356.0" prefWidth="81.0">
+      <AnchorPane layoutY="45.0" prefHeight="356.0" prefWidth="81.0" style="-fx-background-color: #fff;">
          <children>
             <Button layoutX="6.0" layoutY="98.0" mnemonicParsing="false" onAction="#azul" prefHeight="35.0" prefWidth="40.0">
                <effect>
@@ -94,9 +94,10 @@
                   </ImageInput>
                </effect>
             </Button>
+            <Separator layoutX="78.0" layoutY="12.0" orientation="VERTICAL" prefHeight="337.0" prefWidth="3.0" />
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="46.0" prefWidth="600.0">
+      <AnchorPane prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #fff;">
          <children>
             <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="32.0" text="MenuButton">
               <items>
@@ -134,6 +135,7 @@
                   </ImageInput>
                </effect>
             </Button>
+            <Separator layoutX="77.0" layoutY="40.0" prefHeight="6.0" prefWidth="516.0" />
          </children>
       </AnchorPane>
    </children>
