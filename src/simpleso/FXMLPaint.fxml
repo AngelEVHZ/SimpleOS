@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLPaintController">
+   <children>
+      <Canvas fx:id="papel" height="356.0" layoutX="84.0" layoutY="44.0" onMouseDragged="#dibujar" onMouseMoved="#actualizar" width="516.0" />
+      <AnchorPane layoutY="45.0" prefHeight="356.0" prefWidth="81.0">
+         <children>
+            <Button layoutX="6.0" layoutY="98.0" mnemonicParsing="false" onAction="#azul" prefHeight="35.0" prefWidth="40.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/azul.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="41.0" layoutY="98.0" mnemonicParsing="false" onAction="#negro" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/negro.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="5.0" layoutY="133.0" mnemonicParsing="false" onAction="#rojo" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/rojo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="40.0" layoutY="133.0" mnemonicParsing="false" onAction="#amarillo" prefHeight="35.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/amarillo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Separator layoutX="7.0" layoutY="78.0" prefHeight="15.0" prefWidth="67.0" />
+            <Label layoutX="20.0" layoutY="69.0" text="Colores">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="4.0" layoutY="168.0" mnemonicParsing="false" onAction="#verde" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/verde.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="39.0" layoutY="168.0" mnemonicParsing="false" onAction="#morado" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/morado.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="coloractual" layoutX="16.0" layoutY="12.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="52.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/c_negro.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="20.0" layoutY="206.0" mnemonicParsing="false" onAction="#blanco" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/borrar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="46.0" prefWidth="600.0">
+         <children>
+            <MenuButton layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="32.0" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#borrar" text="Nuevo" />
+                <MenuItem mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrir" text="Abrir" />
+              </items>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/nuevo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </MenuButton>
+            <Button layoutX="142.0" layoutY="7.0" mnemonicParsing="false" onAction="#px" prefHeight="25.0" prefWidth="32.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/nuevo1.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Label fx:id="l_trazo" layoutX="228.0" layoutY="15.0" prefHeight="17.0" prefWidth="45.0" text="5 PX">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Button layoutX="176.0" layoutY="7.0" mnemonicParsing="false" onAction="#px2" prefHeight="25.0" prefWidth="40.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="@../imagenes/paint/borrar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

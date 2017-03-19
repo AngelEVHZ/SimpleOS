@@ -5,16 +5,20 @@
  */
 package simpleso;
 
-
-
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
+import javafx.stage.Stage;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.ImageInput;
@@ -22,18 +26,15 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 /**
  *
  * @author Valenzuela
  */
 public class FXMLDocumentController implements Initializable {
-    
-    /*putoooooo*/
-    /*que poca madre*/
-    
-    
-
+     
     @FXML private AnchorPane p_usuario;
     @FXML private AnchorPane p_contrasena;
     @FXML private PasswordField contrasena;
@@ -42,21 +43,22 @@ public class FXMLDocumentController implements Initializable {
     @FXML private Button botonCandado;
     @FXML private Button salir;
     boolean bandera= false;
+    /******* UDUARIO Y CONTRASEÑA***********/
     String usuario_="sample";
     String contrasena_="123";
+      /******* IMAGENES ***********/
     Image imagen = new Image(getClass().getResourceAsStream("/imagenes/error.png"));
     ImageInput imageInput = new ImageInput(imagen);
     Image imagen2 = new Image(getClass().getResourceAsStream("/imagenes/candadorojo.png"));
     ImageInput imageInput2 = new ImageInput(imagen2);
-    
     Image imagen3 = new Image(getClass().getResourceAsStream("/imagenes/cerrarrojo.png"));
     ImageInput imageInput3 = new ImageInput(imagen3);
-    
     Image imagen4 = new Image(getClass().getResourceAsStream("/imagenes/cerrar.png"));
     ImageInput imageInput4 = new ImageInput(imagen4);
+       /******************/
     
     @FXML
-    private void validar(ActionEvent event) {
+    private void validar(ActionEvent event) throws IOException {
         if(bandera==false){
             if(usuario.getText().equals(usuario_)){
                 p_usuario.setVisible(false);
@@ -68,8 +70,10 @@ public class FXMLDocumentController implements Initializable {
             usuario.setText("");
         }else{
             if(contrasena.getText().equals(contrasena_)){
+                //********************* CONTRASEÑA y USUARIO CORRECTOS
                 p_usuario.setVisible(false);
                 p_contrasena.setVisible(false);
+                
             }else{
                 botonCandado.setEffect(imageInput2);
             }
@@ -77,6 +81,15 @@ public class FXMLDocumentController implements Initializable {
         }
         
     }
+    private void crearPaint() throws IOException {
+       Stage stage= new Stage();
+       Parent root = FXMLLoader.load(getClass().getResource("FXMLPaint.fxml"));     
+       Scene scene = new Scene(root);
+       stage.setScene(scene);
+       stage.setTitle("Paint");
+       stage.show();
+    }
+    
      @FXML
     private void entered(MouseEvent event) {
         salir.setEffect(imageInput3);
@@ -89,8 +102,19 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        p_usuario.setVisible(true);
-        p_contrasena.setVisible(false);
-    }    
+           
+            p_usuario.setVisible(true);
+            p_contrasena.setVisible(false);
+          
+         //PROBANDO PAINT*************************************   
+         try {
+            crearPaint();
+         } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }    
+       /*******************************************************/
+}    
+    
+    
     
 }
