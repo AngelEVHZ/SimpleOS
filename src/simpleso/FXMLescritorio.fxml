@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLescritorioController">
+    <stylesheets>
+        <URL value="@fxmlescritorio.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="Button">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../../imagenes/escritorio/avion-de-papel.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <TextField />
+                  <Button mnemonicParsing="false" onAction="#navegador" prefHeight="32.0" prefWidth="32.0" text="Button">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../../imagenes/escritorio/atomico.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="Button">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../../imagenes/escritorio/reloj.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="Button">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../../imagenes/escritorio/calendario.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </HBox>
+         </top>
+         <center>
+            <!--styleClass="AnchorPane" stylesheets="@estilo.css"-->
+            <AnchorPane id="fondo" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FlowPane hgap="70.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" vgap="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/monitor-de-ordenador.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/carpeta.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/carpeta.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/editar-documento.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/reproductor-de-video.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/editar-documento.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="@../../imagenes/escritorio/imagen.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

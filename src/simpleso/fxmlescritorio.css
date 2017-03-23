@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /*-fx-background-color: blue;*/
+}
+#fondo{
+    -fx-background-image: url("../../imagenes/escritorio/Fondo.png");
+    -fx-background-position: center;
+}
