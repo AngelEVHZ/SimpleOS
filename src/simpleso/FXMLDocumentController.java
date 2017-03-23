@@ -73,6 +73,11 @@ public class FXMLDocumentController implements Initializable {
                 //********************* CONTRASEÑA y USUARIO CORRECTOS
                 p_usuario.setVisible(false);
                 p_contrasena.setVisible(false);
+                //En esta parte abriré el escritorio
+                SimpleSO ss = new SimpleSO();
+                try{
+                    ss.escritorio();
+                }catch(Exception e){}
                 
             }else{
                 botonCandado.setEffect(imageInput2);
@@ -82,13 +87,13 @@ public class FXMLDocumentController implements Initializable {
         
     }
     private void crearPaint() throws IOException {
-       Stage stage= new Stage();
+       /*Stage stage= new Stage();
        Parent root = FXMLLoader.load(getClass().getResource("FXMLPaint.fxml"));     
        Scene scene = new Scene(root);
        stage.setScene(scene);
        stage.setTitle("Paint");
      
-       stage.show();
+       stage.show();*/
     }
     
      @FXML
