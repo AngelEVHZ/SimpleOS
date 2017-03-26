@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLReproductorController">
+   <children>
+      <ImageView fx:id="play" fitHeight="115.0" fitWidth="114.0" layoutX="118.0" layoutY="329.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="antes" fitHeight="115.0" fitWidth="114.0" layoutX="14.0" layoutY="329.0" onMouseClicked="#anterior" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/next2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="next" fitHeight="115.0" fitWidth="114.0" layoutX="232.0" layoutY="329.0" onMouseClicked="#siguiente" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/hhhhhh.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="182.0" fitWidth="181.0" layoutX="71.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/musica.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" layoutX="41.0" layoutY="304.0" prefHeight="25.0" prefWidth="294.0">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="open" fitHeight="46.0" fitWidth="44.0" layoutX="12.0" layoutY="14.0" onMouseClicked="#selecciona" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/boton-de-menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resume" fitHeight="115.0" fitWidth="114.0" layoutX="118.0" layoutY="329.0" onMouseClicked="#resum" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../imagenes/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pause" fitHeight="115.0" fitWidth="114.0" layoutX="118.0" layoutY="329.0" onMouseClicked="#pausa" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../imagenes/pause.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
