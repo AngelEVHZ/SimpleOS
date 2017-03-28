@@ -37,7 +37,7 @@ public class Player  {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Reproducir....");
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("MP3", "*.mp3")
+                new FileChooser.ExtensionFilter("Mp3", "*.mp3")
         );
         
         canciones = (List<File>) fileChooser.showOpenMultipleDialog(stage);

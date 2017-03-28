@@ -38,7 +38,7 @@ public class FXMLBrowserController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
       myWebEngine  = atom.getEngine();
-      myWebEngine.load("https://www.google.com.mx");
+      myWebEngine.load("https://www.google.com");
           
     }    
     
