@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="811.0" prefWidth="1241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLVideoController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="720.0" fitWidth="1080.0" layoutX="81.0" layoutY="14.0" preserveRatio="false" />
+      <ImageView fitHeight="65.0" fitWidth="103.0" layoutX="81.0" layoutY="732.0" onMouseClicked="#antes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/next2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="103.0" layoutX="1058.0" layoutY="732.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/hhhhhh.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="play" fitHeight="65.0" fitWidth="103.0" layoutX="588.0" layoutY="732.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pause" fitHeight="65.0" fitWidth="103.0" layoutX="588.0" layoutY="732.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../imagenes/pause.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#vplay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/boton-de-menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
