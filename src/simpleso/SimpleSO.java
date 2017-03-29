@@ -21,7 +21,8 @@ public class SimpleSO extends Application {
     public void start(Stage stage) throws Exception {
         this.stage = stage;
         
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLcmd.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXMLBrowser.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXMLPaint.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXMLBrowser.fxml"));
