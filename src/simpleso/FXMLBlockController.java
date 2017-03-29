@@ -9,17 +9,23 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceDialog;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextInputDialog;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import javafx.stage.Window;
 
 
@@ -54,6 +60,9 @@ public class FXMLBlockController implements Initializable {
     
     @FXML
     private TextArea txarea;
+    
+     @FXML
+    private MenuItem cerrar;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -163,6 +172,12 @@ public class FXMLBlockController implements Initializable {
             
         }
         
+        
+    }
+    
+    @FXML
+    private void closeButtonAction() throws IOException{
+        // get a handle to the stage
         
     }
     

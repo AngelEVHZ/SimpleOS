@@ -86,15 +86,7 @@ public class FXMLDocumentController implements Initializable {
         }
         
     }
-    private void crearPaint() throws IOException {
-       Stage stage= new Stage();
-       Parent root = FXMLLoader.load(getClass().getResource("FXMLBlock.fxml"));     
-       Scene scene = new Scene(root);
-       stage.setScene(scene);
-       stage.setTitle("Ionic Block");
-     
-       stage.show();
-    }
+    
     
      @FXML
     private void entered(MouseEvent event) {
@@ -113,11 +105,7 @@ public class FXMLDocumentController implements Initializable {
             p_contrasena.setVisible(false);
           
          //PROBANDO PAINT*************************************   
-         try {
-            crearPaint();
-         } catch (IOException ex) {
-            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-        }    
+         
        /*******************************************************/
 }    
     

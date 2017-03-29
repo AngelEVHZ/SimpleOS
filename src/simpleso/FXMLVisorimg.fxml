@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleso.FXMLVisorimgController">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#verImagen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/boton-de-menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img" fitHeight="450.0" fitWidth="550.0" layoutX="90.0" layoutY="34.0" pickOnBounds="true" />
+      <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="90.0" layoutY="482.0" onMouseClicked="#antes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/next2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="102.0" layoutX="546.0" layoutY="482.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/hhhhhh.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
