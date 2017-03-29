@@ -88,10 +88,10 @@ public class FXMLDocumentController implements Initializable {
     }
     private void crearPaint() throws IOException {
        Stage stage= new Stage();
-       Parent root = FXMLLoader.load(getClass().getResource("FXMLReproductor.fxml"));     
+       Parent root = FXMLLoader.load(getClass().getResource("FXMLBlock.fxml"));     
        Scene scene = new Scene(root);
        stage.setScene(scene);
-       stage.setTitle("Atom Player");
+       stage.setTitle("Ionic Block");
      
        stage.show();
     }
